@@ -16,6 +16,15 @@ function Home() {
         <li class="list-group-item list-group-item-success">
           <Link to="/prime-numbers">Prime Numbers</Link>
         </li>
+        <li class="list-group-item list-group-item-success">
+          <Link to="/multiplication-table">Multiplication Table</Link>
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <Link to="/sum-of-natural-numbers">Sum Of Natural Numbers</Link>
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <Link to="/sum-of-Digits">Sum Of Digits in a String</Link>
+        </li>
         <li class="list-group-item list-group-item-info">
           This is a warning list group item
         </li>

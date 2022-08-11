@@ -1,22 +1,18 @@
 import React from "react";
 import { useState } from "react";
 
-function MultiplicationTable() {
+function SumOfDigits() {
   const [input, setInput] = useState("");
-  const result = [];
 
-  const getMultiplicationTable = () => {
-    // Check if letter or null
-    if (isNaN(input) || !input) {
-      return "Please enter a number.";
-    }
+  let total = 0;
+  const getSumOfDigits = () => {
+    input.split("").map((data) => {
+      if (!isNaN(data)) {
+        total = total + parseInt(data);
+      }
+    });
 
-    // Creating multiplication table
-    for (let i = 1; i <= 10; i++) {
-      result.push(input * i);
-    }
-
-    return result.map((data) => data);
+    return total;
   };
 
   return (
@@ -39,7 +35,7 @@ function MultiplicationTable() {
             rows="10"
             readOnly={true}
             placeholder="Output"
-            value={getMultiplicationTable()}
+            value={getSumOfDigits()}
           />
         </div>
       </div>
@@ -47,4 +43,4 @@ function MultiplicationTable() {
   );
 }
 
-export default MultiplicationTable;
+export default SumOfDigits;
