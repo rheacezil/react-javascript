@@ -1,18 +1,19 @@
 import React from "react";
 import { useState } from "react";
 
-function SumOfDigits() {
+function CheckWithinRange() {
   const [input, setInput] = useState("");
 
-  let total = 0;
-  const getSumOfDigits = () => {
-    input.split("").map((data) => {
-      if (!isNaN(data)) {
-        total = total + parseInt(data);
-      }
-    });
-
-    return total;
+  let isWithin = false;
+  const checkNumber = () => {
+    // Check if letter or null
+    if (isNaN(input) || !input) {
+      return "Please enter a number.";
+    } else if (parseInt(input) <= 500 && parseInt(input) >= 100) {
+      return String(!isWithin);
+    } else {
+      return String(isWithin);
+    }
   };
 
   return (
@@ -27,12 +28,13 @@ function SumOfDigits() {
             onChange={(e) => setInput(e.target.value)}
           />
         </div>
-        <div className="col-12 text-primary">
-          <h2>{getSumOfDigits()}</h2>
+        <div>
+          <h1 className="text-primary">{checkNumber()}</h1>
+          <h3>{isWithin}</h3>
         </div>
       </div>
     </div>
   );
 }
 
-export default SumOfDigits;
+export default CheckWithinRange;

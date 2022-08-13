@@ -16,26 +16,37 @@ function Home() {
         <li class="list-group-item list-group-item-success">
           <Link to="/prime-numbers">Prime Numbers</Link>
         </li>
-        <li class="list-group-item list-group-item-success">
+        <li class="list-group-item list-group-item-light">
           <Link to="/multiplication-table">Multiplication Table</Link>
         </li>
-        <li class="list-group-item list-group-item-success">
+        <li class="list-group-item list-group-item-dark">
           <Link to="/sum-of-natural-numbers">Sum Of Natural Numbers</Link>
         </li>
-        <li class="list-group-item list-group-item-success">
+        <li class="list-group-item list-group-item-primary">
           <Link to="/sum-of-Digits">Sum Of Digits in a String</Link>
         </li>
-        <li class="list-group-item list-group-item-info">
-          This is a warning list group item
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/check-within-range">Check Within 100 - 500</Link>
         </li>
-        <li class="list-group-item list-group-item-secondary">
-          This is a info list group item
+        <li class="list-group-item list-group-item-success">
+          <Link to="/right-trianle">Right Triangle</Link>
         </li>
         <li class="list-group-item list-group-item-light">
-          This is a light list group item
+          <Link to="/isosceles-trianle">Isosceles Triangle</Link>
         </li>
+
         <li class="list-group-item list-group-item-dark">
-          This is a dark list group item
+          <Link to="/number-right-trianle">Number Right Triangle</Link>
+        </li>
+
+        <li class="list-group-item list-group-item-primary">
+          <Link to="/get-largest">Get The Largest Number</Link>
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          <Link to="/vowel-count">Get The Number of Vowels</Link>
+        </li>
+        <li class="list-group-item list-group-item-success">
+          <Link to="/triangle">Triangle</Link>
         </li>
       </ol>
     </div>

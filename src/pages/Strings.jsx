@@ -3,6 +3,16 @@ import { useState } from "react";
 
 function Strings() {
   const [input, setInput] = useState("");
+  const getReverseString = () => {
+    return input
+      .split("")
+      .reverse("")
+      .join("")
+      .split(" ")
+      .reverse("")
+      .join(" ");
+  };
+
   return (
     <div className="container p-5">
       <div className="row">
@@ -14,23 +24,7 @@ function Strings() {
           />
         </div>
         <div className="col-md-5">
-          <textarea
-            name="text"
-            id="text"
-            cols="30"
-            rows="10"
-            readOnly={true}
-            placeholder="Output"
-            value={input
-              .split("")
-              .reverse("")
-              .join("")
-              .split(" ")
-              .reverse("")
-              .join(" ")}
-          >
-            text sample
-          </textarea>
+          <h2>{getReverseString()}</h2>
         </div>
       </div>
     </div>
